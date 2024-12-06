@@ -70,3 +70,31 @@ print("This is the row matrix:\n", result1)
 result2 = result.reshape(8,1) # Column matrix
 print("This is the column matrix:\n", result1)
 
+"""#Statistical Measures:"""
+
+array = np.arange(10)
+print(array)
+
+r1 = np.mean(array)
+print(r1)
+
+r2 = np.std(array)
+print(r2)
+
+r3 = np.var(array)
+print(r3)
+
+from statistics import mean, median, mode, stdev, variance
+data = [1,2,3,4,5]
+print(mean(data))
+print(median(data))
+print(mode(data))
+print(stdev(data))
+print(variance(data))
+
+import statistics as st
+data = [1,2,3,4,5]
+print(st.mean(data))
+print(st.geometric_mean(data))
+print(st.harmonic_mean(data))
+
